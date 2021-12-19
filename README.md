@@ -1,10 +1,10 @@
-# myIlastik
+# myilastik
 Dockerized version of iLastik, tool for image segmentation
 
   by dotnetmobile@gmail.com
 ---
 
-This Docker image facilate the usage of [iLastik](https://www.ilastik.org), the interactive image annotation tool.
+This Docker image facilate the usage of [ilastik](https://www.ilastik.org), the interactive image annotation tool.
 
 Prerequisits for MacOS: install [XQuartz](https://www.xquartz.org)
 
