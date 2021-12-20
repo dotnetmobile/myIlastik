@@ -14,7 +14,8 @@ open -a XQuartz
 IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
 echo $IP
 sudo xhost + $IP
-sudo docker run --rm -e DISPLAY=$IP:0 -v /tmp/.X11-unix:/tmp/.X11-unix myilastik
+
+# ilastik /home used for reading and writing outcomes is mounted with the host path /path_to_your_folder
 
 sudo docker run --rm -e DISPLAY=$IP:0 -v /tmp/.X11-unix:/tmp/.X11-unix \
 --mount type=bind,source=/path_to_your_folder,target=/home/ \
